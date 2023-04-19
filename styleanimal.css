@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    width: 100%;
+  
+
+
+}
+
+.responsive {
+    background-image: url(/Images/images7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+
+.responsive h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.responsive h1 span {
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.letter {
+    text-align: center;
+}
+
+.letter span {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.title {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px 0px;
+    color: black;
+    letter-spacing: 1rem;
+}
+
+.container {
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 30px 0px;
+    justify-content: space-evenly;
+}
+
+.container img {
+    width: 100%;
+    height: 550px;
+}
+
+.card {
+
+    flex-basis: 30%;
+    box-shadow: 4px 3px 5px lightsteelblue;
+    position: relative;
+    transition: 0.9s ease-in-out;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    left: 0px;
+    top: 340px;
+}
+
+.img {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: lightblue;
+
+}
+
+.imageslider {
+    width: 40%;
+    height: 40vh;
+    background: url('/Images/images10.jpg') no-repeat center center/cover;
+    animation: name 20s linear infinite;
+    margin: 19px;
+    padding-left: 20px;
+
+}
+
+.head1,
+.head2 {
+    font-size: 1.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
+    padding-right: 10px;
+}
+
+.container h1 {
+    font-size: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 12px;
+}
+
+.card p {
+    color: darkgray;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.card:hover {
+    background-color: gray;
+    cursor: pointer;
+    transform: translateY(-20px);
+
+}
+
+.intro:hover {
+    background-color: black;
+
+
+}
+
+p:hover {
+    color: white;
+
+
+}
+
+.intro h1 :hover {
+    color: white;
+
+    cursor: pointer;
+}
+
+h1 span:hover {
+    color: white;
+
+    cursor: pointer;
+}
+
+.theme {
+    margin-top: 16px;
+    display: flex;
+    text-align: center;
+    height: 30vh;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+
+}
+
+a {
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    color: darkcyan;
+    margin-top: 50px;
+
+
+
+    transition: 1s ease;
+}
+
+.theme a:hover {
+    transform: translateY(-10px);
+    color: aliceblue;
+
+
+}
+
+body::-webkit-scrollbar {
+
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: darkcyan;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 10px lightskyblue;
+}
+
+body::-webkit-scrollbar-thumb {
+
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+body::-webkit-scrollbar-button {
+
+
+    background-color: darkgrey;
+}
+
+@keyframes name {
+    0% {
+        background: url('/Images/images10.jpg')no-repeat center center/cover;
+
+    }
+
+    25% {
+        background: url('/Images/images11.jpg')no-repeat center center/cover;
+
+    }
+
+    50% {
+        background: url('/Images/images12.jpg')no-repeat center center/cover;
+
+    }
+
+    75% {
+        background: url('/Images/images13.jpg')no-repeat center center/cover;
+
+    }
+
+    100% {
+        background: url('/Images/images9.webp')no-repeat center center/cover;
+
+    }
+
+
+}
+
+@media only screen and (min-width:100px) and (max-width:800px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .responsive{
+        width: fit-content;
+    }
+    .img{
+        width: 100%;
+        flex-direction: column;
+        padding: 5px; 
+    }
+    .theme{
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+    }
+}
